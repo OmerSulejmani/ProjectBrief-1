@@ -1,0 +1,25 @@
+.position-relative {
+    height: 60vh;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    color: rgba(22, 133, 236, 0.89);
+    cursor: pointer;
+}
+
+.bg-skyblue {
+    background-color: rgb(239, 244, 245);
+}
+
+.bg-skyblue1 {
+    background-color: #cde5fe;
+}
+
+.link-small {
+    font-size: 0.8rem;
+}
