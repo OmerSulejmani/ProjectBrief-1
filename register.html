@@ -28,24 +28,24 @@
             </button>
 
             <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav fw-semibold">
+                <ul class="navbar-nav fw-normal">
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary " href="#">Home</a>
+                        <a class="nav-link text-body-tertiary " href="Index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary" href="#">About</a>
+                        <a class="nav-link text-body-tertiary" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary" href="#">Schedule</a>
+                        <a class="nav-link text-body-tertiary" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary" href="#">Speaker</a>
+                        <a class="nav-link text-body-tertiary" href="speaker.html">Speaker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary" href="#">Register</a>
+                        <a class="nav-link text-body-tertiary" href="register.html">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body-tertiary" href="#">Contact Us</a>
+                        <a class="nav-link text-body-tertiary" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </section>
@@ -54,86 +54,92 @@
 
     <!--Register Form-->
 
-    <section class="container mt-5 py-4 text-center">
-        <h1>Register for TechForward 2024</h1>
-        <h5>Please Fill out the form below to register for the event</h5>
-
-        <form class="text-start">
-            <div class="mb-3">
+    <section class="container mt-5 py-4 d-flex flex-column justify-content-center">
+        <section class="text-center">
+            <h1>Register for TechForward 2024</h1>
+            <h5>Please Fill out the form below to register for the event</h5>
+        </section>
+        <form class=" container text-start w-75">
+            <section class="mb-3">
                 <h4>Full name</h4>
-                <input type="email" class="form-control" id="exampleInputName" placeholder="Enter full name">
-            </div>
-            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputName" placeholder="Enter full name ">
+            </section>
+            <section class="mb-3">
                 <h4>Email Adress</h4>
                 <input type="password" class="form-control" id="exampleInputEmail" placeholder="Enter Email">
-            </div>
-            <div class="mb-3">
+            </section>
+            <section class="mb-3">
                 <h4>Phone Number</h4>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone number">
-            </div>
-        </form>
-    </section>
-    <section class="container">
-        <h4>Attendance Type</h4>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                Virtual
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                In-Person
-            </label>
-        </div>
-    </section><br>
-    <section class="container py-2">
-        <h4>Session Interes</h4>
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-            <option selected>Technology Trends</option>
-            <option value="1">Software Development</option>
-            <option value="2">CyberSecurity</option>
-            <option value="3">DataScience</option>
-            <option value="3">Cloud Computing</option>
-        </select>
-    </section><br>
-
-    <section class="container">
-
-        <h4>Number of tickets</h4>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="How many Tickets?">
-
-    </section><br>
-
-    <section class="container">
-        <h4>Arrival Date</h4>
-        <form>
-            <section class="mb-3">
-                <input type="date" class="form-control" id="data" name="data">
             </section>
         </form>
+
+
+        <section class="container w-75 ">
+            <h4>Attendance Type</h4>
+            <section class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Virtual
+                </label>
+            </section>
+            <section class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    In-Person
+                </label>
+            </section>
+        </section><br>
+        <section class="container py-2 w-75">
+            <h4>Session Interes</h4>
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Technology Trends</option>
+                <option value="1">Software Development</option>
+                <option value="2">CyberSecurity</option>
+                <option value="3">DataScience</option>
+                <option value="3">Cloud Computing</option>
+            </select>
+        </section><br>
+
+        <section class="container w-75">
+
+            <h4>Number of tickets</h4>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="How many Tickets?">
+
+        </section><br>
+
+        <section class="container w-75">
+            <h4>Arrival Date</h4>
+            <form>
+                <section class="mb-3">
+                    <input type="date" class="form-control" id="data" name="data">
+                </section>
+            </form>
+        </section>
+
+        <section class="container w-75">
+            <h4>Additional Information</h4>
+            <section class="form-floating">
+                <section class="form-floating link-small">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Any additional information or requirements</label>
+                </section>
+
+            </section>
+        </section><br>
+
+        <section class="container w-75 ">
+            <button class="btn btn-primary w-100">Submit</button>
+        </section>
     </section>
 
-    <section class="container">
-        <h4>Additional Information</h4>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Any additional information or required</label>
-        </div>
-    </section><br>
-
-    <section class="container">
-        <button class="btn btn-primary w-100">Submit</button>
-    </section>
 
     <!--Footer-->
 
     <section class="container-fluid bg-skyblue py-4 mt-5">
         <section class="row ">
 
-            <section class="col-12 col-sm-6 ps-5">
+            <section class="col-12 col-sm-6 ps-4">
                 <h6 class="text-body-tertiary">Follow Us Social on Media:</h6>
                 <section class="d-flex column-gap-2 fw-semibold text-primary">
 
@@ -148,7 +154,7 @@
 
             </section>
 
-            <section class="col-12 col-sm-6 ps-5">
+            <section class="col-12 col-sm-6 ps-4">
                 <h6 class="text-body-tertiary">Quick Links</h6>
                 <section class="d-flex column-gap-2 fw-semibold text-primary">
 
